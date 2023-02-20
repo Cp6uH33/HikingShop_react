@@ -8,9 +8,7 @@ const Home = () => {
     <>
     
     <HeroHeader/>
-
     <FeaturedItems/>
-
     <Subscribe/>
 
     </>
