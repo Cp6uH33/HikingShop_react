@@ -14,11 +14,16 @@ import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 import { Routes, Route } from "react-router-dom";
+
+import { ProductsProvider } from "./contexts/ProductsContext";
+import { CartProvider } from "./contexts/CartContext";
 // import './App.css';
 
 const App = () => {
   return (
     <div>
+      <ProductsProvider>
+      <CartProvider>
       <Topbar />
       <Navbar />
 
@@ -36,6 +41,8 @@ const App = () => {
       </Routes>
 
       <Footer />
+      </CartProvider>
+      </ProductsProvider>
     </div>
   );
 };

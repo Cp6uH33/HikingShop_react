@@ -2,7 +2,7 @@ import React from 'react';
 
 const Topbar = () => {
   return (
-    <section class="topbar">
+    <section className="topbar">
         <h1>
             <a className="logo" href="/"><i className="fas fa-hiking"></i>Hiking shop</a>
         </h1>
