@@ -11,7 +11,7 @@ export const ProductsProvider = ({children}) => {
     .then(res => res.json())
     .then(prodRes => setProducts(prodRes))
     .catch(err => console.log(err))
-  }, [products]);
+  }, []);
 
     return(
         <ProductsContext.Provider value={{ products, setProducts}}>
